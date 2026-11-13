@@ -5,9 +5,11 @@ A reproducible research notebook for **Prison Life** (Roblox PlaceId
 Luraph-obfuscated scripts — **Anomaly** (`anomaly.pw`) and **KX Admin**
 (`kxadminv2.onrender.com`).
 
-This is **analysis, not a cheat**. It documents what the client actually
-exposes so scripts and anti-cheat rules can be audited. It contains no working
-exploit, no licence key, and no server-side bypass.
+This repository documents what the Prison Life client actually exposes and ships
+a reference script built only on those confirmed remotes. It contains no
+server-side bypass, no licence key, and does not redistribute the third-party
+obfuscated payloads it analyses. Using the script violates Roblox's terms of
+service; it is published for study and interoperability work.
 
 ---
 
@@ -15,6 +17,7 @@ exploit, no licence key, and no server-side bypass.
 
 | Path | Contents |
 |---|---|
+| [`PrisonLife.lua`](PrisonLife.lua) | The reference script: self-contained UI, ESP, camera assist, auto-arrest, giver/tool collection, team switching, teleports, anti-AFK and fullbright, built from the documented remotes. |
 | [`docs/PrisonLife-Deobfuscated-API.md`](docs/PrisonLife-Deobfuscated-API.md) | The main result: 103 client scripts, 93 per-script constant sections, the confirmed remote list, teams, item/giver behaviour, gun attributes, and every string constant recovered from the client dump. |
 | [`docs/Anomaly-and-KX.md`](docs/Anomaly-and-KX.md) | Loader chains, Luraph v15.1 identification, the nested KX stage-2 VM, and the deserialization result. |
 | [`docs/Methodology.md`](docs/Methodology.md) | How the data was recovered, what is confirmed vs. inferred, and the limits of a client-only dump. |
@@ -22,6 +25,39 @@ exploit, no licence key, and no server-side bypass.
 | [`artifacts/`](artifacts/) | SHA-256 manifest and small extracted-constant files. Large payloads are intentionally not committed. |
 | [`tools/run_vm.lua`](tools/run_vm.lua) | LuaJIT harness that deserializes a dumped Luraph/KX stage-2 VM. |
 | [`tools/transpile_luau.py`](tools/transpile_luau.py) | Source transpiler used to turn Luau-flavoured VM dumps into LuaJIT-loadable code. |
+
+---
+
+## Script
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/reizure87-create/prison-life-research/main/PrisonLife.lua"))()
+```
+
+`PrisonLife.lua` is self-contained (no WindUI or other external dependency) and
+works on PC and touch. It uses only remotes named in the API reference:
+
+| Area | Implementation |
+|---|---|
+| ESP | `Highlight` + `BillboardGui`, team colours, distance, health bar, max-distance slider |
+| Camera | smooth aim assist inside a configurable FOV; team check |
+| Arrest | `ArrestPlayer:FireServer(target)` for nearby `Criminals` / `Hostile` / `Trespassing` |
+| Givers | `GiverPressed` and `TouchGiver` on objects with a `ToolName` attribute or a known tool name |
+| Items | `InteractWithItem:InvokeServer(tool)` with a per-tool cooldown |
+| Teams | `RequestTeamChange:InvokeServer(teamName)` |
+| Movement | `RequestHere:FireServer(position)` for cursor, player-list and behind-target teleports |
+| Settings | `GetSettings:InvokeServer()` |
+| Misc | anti-AFK, fullbright, rejoin, config persistence through executor `writefile` when available |
+
+Every remote call is `pcall`-guarded. If a remote is missing, the UI reports it
+instead of firing. Argument shapes are inferred from the dump, so the server may
+reject a call — the script does not claim server-side success.
+
+Verification status: the script parses under LuaJIT and was exercised with a
+mocked Roblox environment (window construction, every toggle/tab/slider/button,
+ESP object creation, aim frame, all six remote paths, and clean unload). It has
+**not** been run against a live Roblox client in this environment, so treat
+gameplay behaviour as untested.
 
 ---
 
