@@ -1,0 +1,25 @@
+# Large third-party payloads are not committed.
+*.bin
+anomaly_pl.lua
+anomaly_pl_clean.lua
+anomaly_pl.lua.luajit.lua
+kx_main.lua
+kx_main.lua.luajit.lua
+kx_stage2_vm_clean.luajit.lua
+kx_stage2_debug.lua
+
+# Scratch output from the capture harness / VM runs.
+*.log
+shots/
+out/
+tmp/
+capture_run.log
+full_run.log
+
+# OS / editor noise.
+.DS_Store
+Thumbs.db
+*.swp
+
+# Node (not used by this repo, but avoids accidental commits).
+node_modules/

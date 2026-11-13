@@ -1,0 +1,154 @@
+[bt #1 len=1] "E"
+[bt #2 len=2311] "\
+\9\9\9\9 .@%(/*,.......      ...,,*/(#%&@@.\
+\9\9\9 (*   ,/(#%%&&@@@@&%((////(((##%###((/**,,.     ,//(&.\
+\9\9   /* .%@@@@@@@@%,  .(&@@@&&&&&&@@@@@@&#(*,........*%@@@(.  ,#.\
+\9\9 */ .&@@@@@@@*  (%,   *(&&@@@@@&%(*,.             .,*(#%(*@@&*  *,\
+\9\9#, /@@@@@@* *&( ,&&/.,/#%&&@@@&(&@@@@@@@@@@@@#*,.....,/&@@@@@@@@( .%\
+\9   #  #@@@@@*/@% .#%./(,.,/*,//*,.,/(*@@@@@@@@@@@@%@@@@@@@@@#.#@@@@@@&. %\
+\9  /  &@@@@@@@@(%@# *&&*&@@@@#/&@@@@/%%.,%@@@@@@@%/@@&(,  ,,,...  *%@@@# *\
+\9#  .&@@@@@@@@@@@,((%@@@@@#.    ,&@@#@@&* .&@@@@@&,.#@@@@/&@@%(@@@&(/,(&, /,\
+ (/   (@&&&%&@@@&/, ,@#(@@@@,        #@@/,&@& /@@@@@,%#%@@@@@(     *@@@@@&,%%. .\
+/  #/,#@@@&#(//#@@@/ %@@@&@@@(.    ,&@@(.*/*  %@@*   %@@@@@@%       (@@&(*...%&.\
+ ///@@&,  (&@@#,   /@/ ,*&@@@@#&@@%#%((%@&* /@@@@@@&. #@@@#&@@@&%%@@@@@@&,/(*@/#\
+%%.&@# .&@@@# /@@@@%&@@@&/.   ,/((/*,  ./&@@@@@@@@@@,*&(./%@@#*&@@@(#(....,&#*@/\
+@%.&& .&@@@&*    /&@@@@@@@@@@@@@@@@&@@#/(%@@@@@@@@@@&,  (@@@@@@@@@@@@/,@@@@@#.&*\
+&&,%% .&*    /@@@(.  ,(@@@@@&/(////#( /&@@@@@@@@@@@@@@@(  ,&@@@@@@@@&, (@@&*/@(/\
+.%*#@( /@@@@( *@@@@@@/     *%@@@@@@@&.,@& ,#, .&@@@@@@# .#*%&/,#@@@@*   *@@&/*&*\
+ .&/.#@@@@@@@,   *&@@%.,&@@&(,    ,(%@%&@@@@@@@@@(.*,  /@@@@@@@@@&,      %@@@@..\
+@* .%@@@@@@@@(       .   (@@@@@@@@(       .*(%&@@@@@@@@@@@@&(,  ./.*@%   /@@% ./\
+  @* .&@@@@@@&.             ./&@@@*.&@@@@@@@&, ,**,.    .,*(&(.%@@# %@*  ,@@% ,#\
+\9&, /@@@@@@*                    .#@@@@@@@@*.%@@@@@(,@@@@@@& ,%(.      .&@% ,#\
+\9  / *@@@@@#                                                           %@&.,#\
+\9  (( .&@@@@*                                                          #@&.,#\
+\9   .&. ,&@@@,                                                         (@&.,#\
+\9\9  #. .%@@* /@@/                                                   /@&.,(\
+\9\9\9./  #@%. %@&,,#,                                              /@@,./\
+\9\9\9  *(  #@%. . (@@@@@%/,                                        /@@,.*\
+\9\9\9\9//  %@&, *@@@@@@@@( (@%/.                                 #@@, (\
+\9\9\9\9  #* .&@@#. (@@@@&.*@@@@@@@@%. */.                  *..%*.&@@, /\
+\9\9\9\9\9@* .%@@@%, ,/ .@@@@@@@@@@,.%@@@@@% .&@@@* #@&..&@*,* %@@&. *\
+\9\9\9\9\9   /  *&@@@@%,   *(&@@@@&. #@@@@@* #@@@% (@@* ,.   /@@@@* (\
+\9\9\9\9\9\9 @#. .#@@@@@@&(,.                      .,*(%&@@@@@&..(\
+\9\9\9\9\9\9\9 &(.   ./%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(. ((\
+\9\9\9\9\9\9\9\9  ,#/*.       ..,,,,,,,,....          ,/#\
+\
+"
+[bt #3 len=4] "task"
+[bt #4 len=6] "cancel"
+[bt #5 len=5] "spawn"
+[bt #6 len=5] "defer"
+[bt #7 len=5] "delay"
+[bt #8 len=4] "wait"
+[bt #9 len=8] "Instance"
+[bt #10 len=7] "Vector3"
+[bt #11 len=7] "Vector2"
+[bt #12 len=6] "CFrame"
+[bt #13 len=6] "Random"
+[bt #14 len=16] "identifyexecutor"
+[bt #15 len=10] "islclosure"
+[bt #16 len=10] "iscclosure"
+[bt #17 len=10] "loadstring"
+[bt #18 len=5] "debug"
+[bt #19 len=78] "The debug library is required on Luau platforms. Please open a support ticket."
+[bt #20 len=4] "info"
+[bt #21 len=9] "traceback"
+[bt #22 len=7] "getinfo"
+[bt #23 len=5] "table"
+[bt #24 len=3] "new"
+[bt #25 len=18] "Path2DControlPoint"
+[bt #26 len=8] "namewhat"
+[bt #27 len=4] "what"
+[bt #28 len=1] "C"
+[bt #29 len=7] "nparams"
+[bt #30 len=8] "isvararg"
+[bt #31 len=9] "short_src"
+[bt #32 len=3] "[C]"
+[bt #33 len=15] "lastlinedefined"
+[bt #34 len=11] "currentline"
+[bt #35 len=11] "linedefined"
+[bt #36 len=6] "source"
+[bt #37 len=4] "=[C]"
+[bt #38 len=12] "getmetatable"
+[bt #39 len=8] "function"
+[bt #40 len=51] "'setfenv' cannot change environment of given object"
+[bt #41 len=5] "slnaf"
+[bt #42 len=12] "setmetatable"
+[bt #43 len=8] "tonumber"
+[bt #44 len=8] "tostring"
+[bt #45 len=6] "rawset"
+[bt #46 len=6] "rawget"
+[bt #47 len=6] "select"
+[bt #48 len=6] "xpcall"
+[bt #49 len=6] "assert"
+[bt #50 len=5] "error"
+[bt #51 len=5] "pcall"
+[bt #52 len=4] "type"
+[bt #53 len=4] "next"
+[bt #54 len=7] "getfenv"
+[bt #55 len=7] "setfenv"
+[bt #56 len=6] "typeof"
+[bt #57 len=6] "gmatch"
+[bt #58 len=6] "format"
+[bt #59 len=5] "match"
+[bt #60 len=4] "find"
+[bt #61 len=4] "char"
+[bt #62 len=4] "byte"
+[bt #63 len=4] "gsub"
+[bt #64 len=3] "sub"
+[bt #65 len=3] "rep"
+[bt #66 len=6] "unpack"
+[bt #67 len=4] "pack"
+[bt #68 len=6] "concat"
+[bt #69 len=6] "insert"
+[bt #70 len=5] "clear"
+[bt #71 len=6] "create"
+[bt #72 len=4] "move"
+[bt #73 len=3] "bor"
+[bt #74 len=4] "bnot"
+[bt #75 len=4] "bxor"
+[bt #76 len=4] "band"
+[bt #77 len=6] "lshift"
+[bt #78 len=6] "rshift"
+[bt #79 len=7] "rrotate"
+[bt #80 len=7] "lrotate"
+[bt #81 len=7] "countlz"
+[bt #82 len=7] "countrz"
+[bt #83 len=3] "len"
+[bt #84 len=4] "fill"
+[bt #85 len=4] "copy"
+[bt #86 len=10] "fromstring"
+[bt #87 len=10] "readstring"
+[bt #88 len=11] "writestring"
+[bt #89 len=6] "readi8"
+[bt #90 len=6] "readu8"
+[bt #91 len=7] "readi16"
+[bt #92 len=7] "readu16"
+[bt #93 len=7] "readi32"
+[bt #94 len=7] "readu32"
+[bt #95 len=7] "readf32"
+[bt #96 len=7] "readf64"
+[bt #97 len=7] "writei8"
+[bt #98 len=7] "writeu8"
+[bt #99 len=8] "writei16"
+[bt #100 len=8] "writeu16"
+[bt #101 len=8] "writei32"
+[bt #102 len=8] "writeu32"
+[bt #103 len=8] "writef32"
+[bt #104 len=8] "writef64"
+[bt #105 len=8] "readbits"
+[bt #106 len=9] "writebits"
+[bt #107 len=11] "isyieldable"
+[bt #108 len=7] "running"
+[bt #109 len=6] "status"
+[bt #110 len=5] "yield"
+[bt #111 len=5] "close"
+[bt #112 len=6] "resume"
+[bt #113 len=4] "wrap"
+[bt #114 len=6] "Folder"
+[bt #115 len=9] "ScreenGui"
+[bt #116 len=5] "Frame"
+[bt #117 len=6] "Path2D"
+[bt #118 len=6] "Parent"
+[bt #119 len=7] "__index"
+[bt #120 len=10] "__newindex"
